@@ -18,7 +18,7 @@ function Contacts() {
                                 <label className="custom-control-label"></label>
                             </div>
                         </th>
-                        <th scope="col">First</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
                         <th scope="col">Actions</th>

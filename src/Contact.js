@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from 'react-avatar';
+import { Link } from "react-router-dom";
 // using destructuring
 function Contact({ contact }) {
 
@@ -15,12 +16,13 @@ function Contact({ contact }) {
             <td><Avatar className="mr-2" name={name} size="75" round={true} />{name}</td>
             <td>{phone}</td>
             <td>{email}</td>
-            <td><a href="#">
-                <span className="material-icons">edit</span>
-            </a>
-                <a href="#">
-                    <span className="material-icons">remove_circle</span>
-                </a>
+            <td className="actions">
+                <Link to="/#">
+                    <span className="material-icons mr-2">edit</span>
+                </Link>
+                <Link to="/">
+                    <span className="material-icons text-danger">remove_circle</span>
+                </Link>
             </td>
         </tr>
 
